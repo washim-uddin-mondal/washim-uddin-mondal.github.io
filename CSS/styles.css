@@ -217,6 +217,10 @@ p{
     padding-right: 60px;
 }
 
+.frontCover{
+    width: 300px;
+}
+
 /* pictures in about section */
 .aboutPicLeft{
     float: left;
@@ -328,6 +332,10 @@ table{
         margin-top: auto;
         margin-bottom: auto;
         padding: 40px 40px 40px 40px;
+    }
+
+    .frontCover{
+        width: 240px;
     }
 
     .imageTextContainer{

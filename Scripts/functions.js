@@ -1,7 +1,7 @@
 function stickynav(){
     let headerY = document.getElementById("name").offsetHeight;
     
-    if (window.pageYOffset > headerY) {
+    if (window.scrollY > headerY) {
         navBar.classList.add("sticky");
         document.getElementById("content").style.paddingTop = '40px';
       } else {
@@ -42,6 +42,14 @@ function loadConferencePublications(){
     loadPublicationData(dataLocation, columns, tableID);
 }
 
+function loadBookPublications(){
+    dataLocation = '../Data/bookData.json';
+    columns = Array("", "Books/Monographs", " ");
+    tableID = "bookTable";
+
+    loadPublicationData(dataLocation, columns, tableID);
+}
+
 function loadSummaryPublications(){
     dataLocation = '../Data/journalData.json';
     columns = Array("Journal", "Count");
@@ -54,6 +62,12 @@ function loadSummaryPublications(){
     tableID = "summaryTableConference";
 
     loadSummaryData("Conference", dataLocation, columns, tableID);
+
+    dataLocation = '../Data/bookData.json';
+    columns = Array("Books/Monographs", "Count");
+    tableID = "summaryTableBook";
+
+    loadSummaryData("Books/Monographs", dataLocation, columns, tableID);
 }
 
 function loadSummaryData(type, dataLocation, columns, tableID){
@@ -87,6 +101,14 @@ function loadSummaryData(type, dataLocation, columns, tableID){
                     jsonContent.push(
                         {
                         "Conference": jsonTempContent[i]["Journal/Conference"], 
+                        "Count": 1
+                        }
+                    );
+                }
+                if (type == "Books/Monographs"){
+                    jsonContent.push(
+                        {
+                        "Books/Monographs": jsonTempContent[i]["Journal/Conference"], 
                         "Count": 1
                         }
                     );
@@ -149,12 +171,17 @@ function makeHTMLTable(jsonContent, columns){
         } else {
             htmlTable += "<tr " + oddStyle + ">";
         }
-        
-
-        for (j=0; j < columns.length; j++){
-            htmlTable += "<td>" + jsonContent[i][columns[j]] + "</td>";
+ 
+        for (j=0; j < columns.length; j++){        
+            if (j==2) {
+                frontCover = "<div class=\"rowJustifiedContainer\"> <img class=\"frontCover\" src=\"" + jsonContent[i]["FrontCover"] + "\" alt=\"purdueUniversity\"> </div>";
+                addContent = "<td>" + frontCover + "</td>";
+            } else {
+                addContent = "<td>" + jsonContent[i][columns[j]] + "</td>";
+            }
+            htmlTable += addContent;
         }        
-        htmlTable += "</tr>";
+        htmlTable += "</tr>";   
     }
 
     return htmlTable;
