@@ -117,7 +117,7 @@ function loadSummaryData(type, dataLocation, columns, tableID){
             }
         }
 
-        htmlContent = makeHTMLTable(jsonContent, columns);
+        htmlContent = makeHTMLTable(jsonContent, columns, tableID);
         document.getElementById(tableID).innerHTML = htmlContent;
     }
 
@@ -135,7 +135,7 @@ function loadPublicationData(dataLocation, columns, tableID){
             jsonContent[i][columns[1]] = jsonContent[i]["Authors"] + ", \"<a href=" + jsonContent[i]["URL"] + " target=\"_blank\">" + jsonContent[i]["Title"] + "</a>\", <i>" + jsonContent[i]["Journal/Conference"] + "</i>, " + jsonContent[i]["Year"] + ".";
             jsonContent[i][""] = "["+ (i+1) + "]";
         }
-        htmlContent = makeHTMLTable(jsonContent, columns);
+        htmlContent = makeHTMLTable(jsonContent, columns, tableID);
         document.getElementById(tableID).innerHTML = htmlContent;
     }
 
@@ -148,14 +148,14 @@ function loadData(dataLocation, columns, tableID){
     
     pageRequest.onload = function () {
         var jsonContent = JSON.parse(pageRequest.responseText);
-        htmlContent = makeHTMLTable(jsonContent, columns);
+        htmlContent = makeHTMLTable(jsonContent, columns, tableID);
         document.getElementById(tableID).innerHTML = htmlContent;
     }
 
     pageRequest.send();
 }
 
-function makeHTMLTable(jsonContent, columns){
+function makeHTMLTable(jsonContent, columns, tableID){
     oddStyle = "style=\"background: #DDDDDD;\"";
     headStyle = "style=\"background: #DDDDDD;\""
 
@@ -173,8 +173,8 @@ function makeHTMLTable(jsonContent, columns){
         }
  
         for (j=0; j < columns.length; j++){        
-            if (columns[j] == "Books/Monographs") {
-                frontCover = "<div class=\"rowJustifiedContainer\"> <img class=\"frontCover\" src=\"" + jsonContent[i]["FrontCover"] + "\" alt=\"purdueUniversity\"> </div> <br>";
+            if (tableID == "bookTable" && j==1) {
+                frontCover = "<div class=\"rowJustifiedContainer\"> <img class=\"frontCover\" src=\"" + jsonContent[i]["FrontCover"] + "\" alt=\"Front Cover\"> </div> <br>";
                 addContent = "<td>" + frontCover + jsonContent[i][columns[j]] + "</td>";
             } else {
                 addContent = "<td>" + jsonContent[i][columns[j]] + "</td>";
