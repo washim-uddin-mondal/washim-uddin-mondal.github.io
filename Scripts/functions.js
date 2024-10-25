@@ -19,7 +19,7 @@ function loadAchievements(){
 }
 
 function loadNews(){
-    dataLocation = '../Data/news.json';
+    dataLocation = './Data/news.json';
     columns = Array("Date", "News");
     tableID = "newsTable";
 
