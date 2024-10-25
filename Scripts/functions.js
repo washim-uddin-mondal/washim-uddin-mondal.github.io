@@ -44,7 +44,7 @@ function loadConferencePublications(){
 
 function loadBookPublications(){
     dataLocation = '../Data/bookData.json';
-    columns = Array("", "Books/Monographs", " ");
+    columns = Array("", "Books/Monographs");
     tableID = "bookTable";
 
     loadPublicationData(dataLocation, columns, tableID);
@@ -173,9 +173,9 @@ function makeHTMLTable(jsonContent, columns){
         }
  
         for (j=0; j < columns.length; j++){        
-            if (j==2) {
-                frontCover = "<div class=\"rowJustifiedContainer\"> <img class=\"frontCover\" src=\"" + jsonContent[i]["FrontCover"] + "\" alt=\"purdueUniversity\"> </div>";
-                addContent = "<td>" + frontCover + "</td>";
+            if (columns[j] == "Books/Monographs") {
+                frontCover = "<div class=\"rowJustifiedContainer\"> <img class=\"frontCover\" src=\"" + jsonContent[i]["FrontCover"] + "\" alt=\"purdueUniversity\"> </div> <br>";
+                addContent = "<td>" + frontCover + jsonContent[i][columns[j]] + "</td>";
             } else {
                 addContent = "<td>" + jsonContent[i][columns[j]] + "</td>";
             }
