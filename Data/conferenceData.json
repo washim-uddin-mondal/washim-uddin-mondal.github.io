@@ -3,7 +3,7 @@
         "Year": "2024",
         "Authors": "W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
-        "URL": "https://arxiv.org/abs/2405.10624",
+        "URL": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/7e7b768198d24d883d69704eee57efb0-Abstract-Conference.html",
         "Title": "Sample-Efficient Constrained Reinforcement Learning with General Parameterization"
     },
 
@@ -11,7 +11,7 @@
         "Year": "2024",
         "Authors": "Q. Bai, W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
-        "URL": "https://arxiv.org/abs/2402.02042",
+        "URL": "https://papers.nips.cc/paper_files/paper/2024/hash/c46c759679acea07d7ea92823ea1e290-Abstract-Conference.html",
         "Title": "Learning General Parameterized Policies for Infinite Horizon Average Reward Constrained MDPs via Primal-Dual Policy Gradient Algorithm"
     },
 
