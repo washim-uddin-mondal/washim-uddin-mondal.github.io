@@ -1,5 +1,13 @@
 [
     {
+        "Year": "2025",
+        "Authors": "S. Ganesh, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+        "URL": "https://proceedings.mlr.press/v258/ganesh25a.html",
+        "Title": "Order-Optimal Regret with Novel Policy Gradient Approaches in Infinite Horizon Average Reward MDPs"
+    },
+
+    {
         "Year": "2024",
         "Authors": "W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
