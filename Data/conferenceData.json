@@ -16,6 +16,14 @@
     },
 
     {
+        "Year": "2025",
+        "Authors": "S. Chakrabarti, and W. U. Mondal",
+        "Journal/Conference": "National Conference on Communications (NCC)",
+        "URL": "https://ieeexplore.ieee.org/document/10983479",
+        "Title": "Uplink NOMA-Aided Multi-Device Multi-Target Integrated Sensing and Communication"
+    },
+
+    {
         "Year": "2024",
         "Authors": "W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
