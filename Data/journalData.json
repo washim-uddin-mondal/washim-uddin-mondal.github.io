@@ -1,5 +1,13 @@
 [
     {
+        "Year": "2025",
+        "Authors": "G. Chaudhary, W. U. Mondal, and L. Behera",
+        "Journal/Conference": "Transactions on Machine Learning Research",
+        "URL": "https://openreview.net/forum?id=PHsfZnF2FC",
+        "Title": "MOORL: A Framework for Integrating Offline-Online Reinforcement Learning"
+    },
+
+    {
         "Year": "2024",
         "Authors": "W. U. Mondal, V. Aggarwal, and S. V. Ukkusuri",
         "Journal/Conference": "Journal of Machine Learning Research",

@@ -9,6 +9,14 @@
 
     {
         "Year": "2025",
+        "Authors": "S. Ganesh, J. Chen, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "Conference on Uncertainty in Artificial Intelligence (UAI)",
+        "URL": "#",
+        "Title": "Order-Optimal Global Convergence for Average Reward Actor-Critic with General Policy and Neural Critic Parametrization"
+    },
+
+    {
+        "Year": "2025",
         "Authors": "S. Ganesh, W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
         "URL": "https://proceedings.mlr.press/v258/ganesh25a.html",
