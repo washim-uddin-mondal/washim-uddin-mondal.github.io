@@ -1,0 +1,37 @@
+[
+    {
+        "Members": "Sunil Patel",
+        "Degree": "Ph. D.",
+        "Research Area": "Reinforcement learning-based resource allocation in NOMA-driven ISAC networks"
+    },
+
+    {
+        "Members": "<a target=\"_blank\" href=\"https://www.linkedin.com/in/pankaj-kumar-barman-5a66761a7/\">Pankaj Kumar Barman</a>",
+        "Degree": "MS (Research)",
+        "Research Area": "Quantum optimization, and quantum reinforcement learning"
+    },
+
+    {
+        "Members": "Adarsh Kumar Karmali",
+        "Degree": "M. Tech.",
+        "Research Area": "Deep reinforcement learning-based resource allocation in Open RAN"
+    },
+
+    {
+        "Members": "Amol Shivaji Wagh",
+        "Degree": "M. Tech.",
+        "Research Area": "Deep generative model-based coverage manifold estimation in wireless networks"
+    },
+
+    {
+        "Members": "Mythreya Garudadri",
+        "Degree": "M. Tech.",
+        "Research Area": "Channel estimation of time varying MIMO-VLC channels"
+    },
+
+    {
+        "Members": "Richik Majumder",
+        "Degree": "M. Tech.",
+        "Research Area": "TBD"
+    }
+]

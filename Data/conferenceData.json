@@ -1,0 +1,97 @@
+[
+    {
+        "Year": "2025",
+        "Authors": "S. Ganesh, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "International Conference on Machine Learning (ICML)",
+        "URL": "https://arxiv.org/abs/2407.18878",
+        "Title": "A Sharper Global Convergence Analysis for Average Reward Reinforcement Learning via an Actor-Critic Approach"
+    },
+
+    {
+        "Year": "2025",
+        "Authors": "S. Ganesh, J. Chen, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "Conference on Uncertainty in Artificial Intelligence (UAI)",
+        "URL": "#",
+        "Title": "Order-Optimal Global Convergence for Average Reward Actor-Critic with General Policy and Neural Critic Parametrization"
+    },
+
+    {
+        "Year": "2025",
+        "Authors": "S. Ganesh, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+        "URL": "https://proceedings.mlr.press/v258/ganesh25a.html",
+        "Title": "Order-Optimal Regret with Novel Policy Gradient Approaches in Infinite Horizon Average Reward MDPs"
+    },
+
+    {
+        "Year": "2025",
+        "Authors": "S. Chakrabarti, and W. U. Mondal",
+        "Journal/Conference": "National Conference on Communications (NCC)",
+        "URL": "https://ieeexplore.ieee.org/document/10983479",
+        "Title": "Uplink NOMA-Aided Multi-Device Multi-Target Integrated Sensing and Communication"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
+        "URL": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/7e7b768198d24d883d69704eee57efb0-Abstract-Conference.html",
+        "Title": "Sample-Efficient Constrained Reinforcement Learning with General Parameterization"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "Q. Bai, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
+        "URL": "https://papers.nips.cc/paper_files/paper/2024/hash/c46c759679acea07d7ea92823ea1e290-Abstract-Conference.html",
+        "Title": "Learning General Parameterized Policies for Infinite Horizon Average Reward Constrained MDPs via Primal-Dual Policy Gradient Algorithm"
+    },
+
+    {
+        "Year": "2024",
+        "Authors":"W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+        "URL": "https://proceedings.mlr.press/v238/mondal24a.html",
+        "Title": "Improved Sample Complexity Analysis of Natural Policy Gradient Algorithm with General Parameterization for Infinite Horizon Discounted Reward Markov Decision Processes"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "Q. Bai, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "AAAI Conference on Artificial Intelligence",
+        "URL": "https://ojs.aaai.org/index.php/AAAI/article/view/28973",
+        "Title": "Regret Analysis of Policy Gradient Algorithm for Infinite Horizon Average Reward Markov Decision Processes"
+    },
+
+    {
+        "Year": "2022",
+        "Authors": "W. U. Mondal, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "Conference on Uncertainty in Artificial Intelligence (UAI)",
+        "URL": "https://proceedings.mlr.press/v180/mondal22a.html",
+        "Title": "Can Mean Field Control (MFC) Approximate Cooperative Multi Agent Reinforcement Learning (MARL) with Non-Uniform Interaction?"
+    },
+
+    {
+        "Year": "2021",
+        "Authors": "W. U. Mondal, M. Agarwal, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "Cooperative AI workshop at Neural Information Processing Systems (NeurIPS)",
+        "URL": "https://www.cooperativeai.com/workshop/neurips-2021#Workshop-Papers",
+        "Title": "On the Approximation of Cooperative Heterogeneous Multi-Agent Reinforcement Learning (MARL) using Mean Field Control (MFC)"
+    },
+
+    {
+        "Year": "2019",
+        "Authors": "W. U. Mondal, and G. Das",
+        "Journal/Conference": "IEEE Vehicular Technology Conference (VTC)",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/8891480",
+        "Title": "Predation Blocking Strategies in Real Cellular Networks and its impact on Spectrum Revenue"
+    },
+
+    {
+        "Year": "2019",
+        "Authors": "W. U. Mondal, A. A. Sardar, N. Biswas, and G. Das",
+        "Journal/Conference": "IEEE International Conference on Communications (ICC)",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/8761657",
+        "Title": "Nash Bargaining Based Economic Analysis of Cognitive Cellular Networks"
+    }
+]

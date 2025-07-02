@@ -1,0 +1,177 @@
+[
+    {
+        "Year": "2025",
+        "Authors": "G. Chaudhary, W. U. Mondal, and L. Behera",
+        "Journal/Conference": "Transactions on Machine Learning Research",
+        "URL": "https://openreview.net/forum?id=PHsfZnF2FC",
+        "Title": "MOORL: A Framework for Integrating Offline-Online Reinforcement Learning"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "W. U. Mondal, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "Journal of Machine Learning Research",
+        "URL": "https://jmlr.org/papers/v25/22-0956.html",
+        "Title": "Mean-Field Approximation of Cooperative Constrained Multi-Agent Reinforcement Learning (CMARL)"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "L. Ling, W. U. Mondal, and S. V. Ukkusuri",
+        "Journal/Conference": "IEEE Journal of Biomedical and Health Informatics",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/10517384",
+        "Title": "Cooperating Graph Neural Networks with Deep Reinforcement Learning for Vaccine Prioritization"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "W. U. Mondal, V. Goyal, S. V. Ukkusuri, G. Das, D. Wang, M. -S. Alouini, and V. Aggarwal",
+        "Journal/Conference": "IEEE Networking Letters",
+        "URL": "https://ieeexplore.ieee.org/document/10433712",
+        "Title": "Near-Perfect Coverage Manifold Estimation in Cellular Networks via Conditional GAN"
+    },
+
+    {
+        "Year": "2024",
+        "Authors": "R. Wang, W. U. Mondal, M. A. Kishk, V. Aggarwal, and M. -S. Alouini",
+        "Journal/Conference": "IEEE Open Journal of the Communications Society",
+        "URL": "https://ieeexplore.ieee.org/document/10347443",
+        "Title": "Terrain-Based Coverage Manifold Estimation: Machine Learning, Stochastic Geometry, or Simulation?"
+    },
+
+    {
+        "Year": "2023",
+        "Authors": "W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "Transactions on Machine Learning Research",
+        "URL": "https://openreview.net/forum?id=ubCoTAynPp",
+        "Title": "Reinforcement Learning with Delayed, Composite, and Partially Anonymous Reward"
+    },
+
+    {
+        "Year": "2023",
+        "Authors": "A. A Sardar, D. Roy, W. U. Mondal, and G. Das",
+        "Journal/Conference": "IEEE Transactions on Cognitive Communications and Networking",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/10064143",
+        "Title": "Coalition Formation for Outsourced Spectrum Sensing in Cognitive Radio Network"
+    },
+
+    {
+        "Year": "2023",
+        "Authors": "W. U. Mondal, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "Transactions on Machine Learning Research",
+        "URL": "https://openreview.net/forum?id=ZME2nZMTvY",
+        "Title": "Mean-Field Control based Approximation of Multi-Agent Reinforcement Learning in Presence of a Non-decomposable Shared Global State"
+    },
+    
+    {
+        "Year": "2022",
+        "Authors":"W. U. Mondal, P. D. Mankar, G. Das, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "IEEE Transactions on Cognitive Communications and Networking",
+        "URL": "https://ieeexplore.ieee.org/document/9866815",
+        "Title": "Deep Learning based Coverage and Rate Manifold Estimation in Cellular Networks"
+    },
+    
+    {
+        "Year": "2022",
+        "Authors": "W. U. Mondal, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "Transactions on Machine Learning Research",
+        "URL": "https://openreview.net/forum?id=t5HkgbxZp1",
+        "Title": "On the Near-Optimality of Local Policies in Large Cooperative Multi-Agent Reinforcement Learning"
+    },
+
+    {
+        "Year": "2022",
+        "Authors":"A. A. Sardar, D. Roy, W. U. Mondal, and G. Das",
+        "Journal/Conference": "IEEE Transactions on Cognitive Communications and Networking",
+        "URL": "https://ieeexplore.ieee.org/document/9786042",
+        "Title": "Sustainability Analysis of Opportunistic CR-IoT Network Employing Microwave Power Transfer"
+    },
+
+    {
+        "Year": "2022",
+        "Authors":"A. A. Sardar, D. Roy, W. U. Mondal, and G. Das",
+        "Journal/Conference": "IEEE Transactions on Wireless Communications",
+        "URL": "https://ieeexplore.ieee.org/document/9722714",
+        "Title": "Queuing Analysis of QoS Aware Microwave Power Transfer Enabled CR-IoT Network"
+    },
+
+    {
+        "Year": "2022",
+        "Authors": "W. U. Mondal, M. Agarwal, V. Aggarwal, and S. V. Ukkusuri",
+        "Journal/Conference": "Journal of Machine Learning Research",
+        "URL": "https://www.jmlr.org/papers/v23/21-1312.html",
+        "Title": "On the Approximation of Cooperative Heterogeneous Multi-Agent Reinforcement Learning (MARL) using Mean Field Control (MFC)"
+    },
+
+    {
+        "Year" : "2021",
+        "Authors": "W. U. Mondal, A. A. Sardar, and G. Das",
+        "Journal/Conference" : "IEEE Transactions on Vehicular Technology",
+        "URL": "https://ieeexplore.ieee.org/document/9329203",
+        "Title" : "Economic Analysis of Cognitive Underlay Networks: A Nash Bargaining Based Approach"
+    },
+
+    {
+        "Year" : "2021",
+        "Authors": "W. U. Mondal, and G. Das",
+        "Journal/Conference" : "IEEE Communications Letters",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/9117114",
+        "Title" : "On Exact Distribution of Poisson-Voronoi Area in K-Tier HetNets With Generalized Association Rule"
+    },
+
+    {
+        "Year" : "2020",
+        "Authors": "W. U. Mondal, D. Roy, S. Dutta, and G. Das",
+        "Journal/Conference" : "IEEE/OSA Journal of Lightwave Technology",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/8993769",
+        "Title" : "Economics of Resilient TWDM PONs"
+    },
+
+    {
+        "Year" : "2019",
+        "Authors": "W. U. Mondal, A. A. Sardar, N. Biswas, and G. Das", 
+        "Journal/Conference" : "IEEE Transactions on Cognitive Communications and Networking",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/8877784",
+        "Title" : "Nash Bargaining Based Economic Analysis of Opportunistic Cognitive Cellular Networks"
+    },
+
+    {
+        "Year" : "2019",
+        "Authors": "W. U. Mondal, and G. Das",
+        "Journal/Conference" : "IEEE Communications Letters",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/8684915",
+        "Title" : "Economics of TWDM PONs With Nonlinear Pricing"
+    },
+
+    {
+        "Year" : "2019",
+        "Authors": "W. U. Mondal, D. Roy, S. Dutta, and G. Das",
+        "Journal/Conference" : "IEEE/OSA Journal of Optical Communications and Networking",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/8666680",
+        "Title" : "Economic analysis of TWDM PONs: A sustainability and policy-making perspective"
+    },
+
+    {
+        "Year" : "2017",
+        "Authors": "W. U. Mondal, and G. Das",
+        "Journal/Conference" : "IEEE Communications Letters",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/7990369",
+        "Title" : "Blocking predation in cellular monopoly through non-linear spectrum pricing"
+    },
+
+    {
+        "Year" : "2017", 
+        "Authors": "W. U. Mondal, and G. Das", 
+        "Journal/Conference" : "IEEE Communications Letters",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/7938328",
+        "Title" : "Uplink User Process in Poisson Cellular Network"
+    },
+
+    {
+        "Year" : "2017",
+        "Authors": "W. U. Mondal, S. Biswas, G. Das, and P. Ray",
+        "Journal/Conference" : "Physical Communication",
+        "URL": "https://www.sciencedirect.com/science/article/abs/pii/S1874490716300817",
+        "Title" : "Traffic-Aware Green Cognitive Radio"
+    }
+]

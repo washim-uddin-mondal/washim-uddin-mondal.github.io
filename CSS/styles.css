@@ -1,0 +1,409 @@
+*{
+    margin: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-size: 100%;
+    background: #f1f1ef;
+}
+
+/* header */
+h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
+    text-align: center;
+    background: black;
+}
+
+/* properties of generic urls */
+a:link, a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+/* navigation bar */
+nav{
+    display: flex;
+    background: rgb(82, 81, 81);
+    height: 40px;
+}
+
+.sticky{
+    top: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-bar-options-container{
+    display: flex;
+    justify-content:center;
+}
+
+.icon{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.icon-wrapper{
+    flex: 1;
+}
+
+.icon-drop-down-container{
+    width: 30px;
+    height: 100%;
+}
+
+.icon-container{
+    height: 100%;
+    width: 210px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-drop-down-container:hover .icon-container{
+    background: rgb(46, 46, 46);
+    animation: growRight 300ms ease-in-out forwards;
+    transform-origin: left;
+}
+
+.icon-drop-down-container:hover .drop-down-menu{
+    display: block;
+    animation: growRight 300ms ease-in-out forwards;
+    transform-origin: left;
+    width: 220px;
+}
+
+.icon-text{
+    display: flex;
+    justify-content: left;
+    font-size: 18px;
+    padding-left: 40px;
+    color: white;   
+    font-weight: 200;
+}
+
+.nav-text{
+    display: flex;
+    justify-content: center;
+    color: white;   
+    font-weight: 200;
+    font-size: 19px;
+}
+
+
+/* navigation buttons */
+nav .buttonContainer:hover{
+    background: rgb(46, 46, 46);
+}
+
+.drop-down-container:hover{
+    background: rgb(46, 46, 46);
+}
+
+/* make the drop-down-menu disappear */
+.drop-down-menu{
+    position: absolute;
+    display: none;
+    width: 160px;
+    background: rgb(46, 46, 46);
+    opacity: 0.95;
+}
+
+.side-drop-down-menu{
+    position: relative;
+    display: none;
+}
+
+/* make the drop-down-menu reappear when the drop-down-container is hovered over */
+.drop-down-container:hover .drop-down-menu{
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+}
+
+@keyframes growRight {
+    0% {
+      transform: scaleX(0)
+    }
+    100% {
+      transform: scaleX(1)
+    }
+}
+
+.side-drop-down-container:hover .side-drop-down-menu{
+    display: block;
+    animation: growRight 300ms ease-in-out forwards;
+    transform-origin: left;
+}
+.side-drop-down-container{
+    background: transparent;
+}
+
+.side-drop-down-menu{
+    margin-left: 10%;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+/* properties of generic paragraph */
+p{
+    color: black;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+.aboutHighlights{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center; 
+    font-size: 20px; 
+    background: rgb(126, 125, 125);
+}
+
+.squareContainer{
+    width: 75vw;
+    max-width: 1000px; 
+    overflow: hidden;
+    padding: 40px 50px 40px 50px;
+    margin: 80px auto 40px auto; 
+    background: darkgrey;
+}
+
+.rowJustifiedContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.columnJustifiedContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0.5vh;
+}
+
+/* profile image */
+.profilePic{
+    width: 300px;
+    float: left;
+}
+
+.profilePic{
+    padding-right: 60px;
+}
+
+.frontCover{
+    width: 300px;
+}
+
+/* pictures in about section */
+.aboutPicLeft{
+    float: left;
+    width: 400px; 
+    height: 280px; 
+    padding-right: 40px; 
+    padding-bottom: 20px;
+    margin-top: 0.5vw;
+}
+
+#purdue{
+    width: 350px; 
+    height: 240px; 
+    padding-bottom: 2px;
+}
+
+#army{
+    width: 180px; 
+    height: 160px; 
+    padding-bottom: 4px;
+}
+
+.imageTextContainer{
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 80px auto;
+}
+
+.designation{
+    font-size: 22px;
+}
+
+.designation + p{
+    margin-top: 18px;
+}
+
+.button{
+    font-family: 'Merriweather', serif;
+    background: transparent; 
+    border: none;
+    height: 40px;
+    width: 160px;
+}
+
+/* table headers */
+th{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* table data */
+td{
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+table{
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+    max-width: 1000px;
+}
+
+/* footer */
+.footerContainer{
+    padding: 10px 0px 10px 0px;
+    display: flex; 
+    justify-content: space-between; 
+    background: darkgrey;
+}
+
+/* overwriting properties of paragraphs that lie inside footer */
+.footerContainer p{  
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 250px; 
+ }
+
+.footerLogo{
+    width: 35px;
+    height: 30px;
+    margin: 3px;
+}
+
+.copyrights{
+    font-size: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav-bar-options-container{
+        display: none;
+    }
+
+    h1{
+        font-size: calc(10px + 3vw);
+        padding: 20px 0px 20px 0px;
+    }
+
+    .profilePic{
+        height: 250px;
+        width: 220px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 40px 40px 40px 40px;
+    }
+
+    .frontCover{
+        width: 240px;
+    }
+
+    .imageTextContainer{
+        flex-wrap: wrap;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutPicLeft{
+        width: 100%; 
+        max-width: 300px;
+        height: 70%;
+        margin: auto;
+        padding: 0px 30px 12px 0px;
+    }
+
+    .aboutHighlights{
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .affiliation{
+        font-size: 15px;
+    }
+
+    .designation{
+        font-size: 22px;
+    }
+
+    .footerContainer{
+        padding: 4px 0px 0px 0px;
+    }
+
+    td{
+        font-size: 14px;
+    }
+    
+    th{
+        font-size: 16px;
+    }
+
+    table{
+        max-width: 80%;
+    }
+    
+    #purdue{
+        width: 100%;
+        padding-bottom: 12px;
+    }
+
+    #army{
+        width: 100px;
+        height: 90px;
+    }
+
+    .squareContainer{
+        padding: 30px 30px 30px 30px;
+        margin-top: 40px;
+    }
+
+    .button{
+        font-size: 15px;
+    }
+
+    .drop-down-menu{
+        width: 220px;
+    }
+}

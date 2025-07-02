@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lora&family=Merriweather:wght@300;400&family=Montserrat:wght@100&family=Noto+Serif&family=Open+Sans:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./Scripts/functions.js"></script>
+</head>
+
+<body onload="loadNews()" onscroll="stickynav()">
+    <div>
+        <div id="header"></div>
+        <script src="./Scripts/loadHeader.js" navButtonName="Home" relPathToRootDir="."></script>
+        
+        <div id="content">
+            <div class="imageTextContainer">
+                <img class="profilePic" src="./Pictures/MyPic.jpg" alt="Image is not found.">
+                <div class="rowJustifiedContainer">
+                    <div class="columnJustifiedContainer" >
+                        <p class="designation"> 
+                            Assistant Professor
+                        </p> 
+                    
+                        <p class="affiliation"> 
+                            Department of Electrical Engineering <br>
+                            Indian Institute of Technology Kanpur <br>
+                            Kanpur, Kalyanpur, UP <br>
+                            India 208016 <br> <br>
+                            Email: wmondal[at]iitk[dot]ac[dot]in
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rowJustifiedContainer">
+                <table id="newsTable">
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="./Scripts/loadFooter.js" relPathToRootDir="."></script>
+</body>
+</html>
