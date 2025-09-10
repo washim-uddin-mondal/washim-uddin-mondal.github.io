@@ -16,6 +16,13 @@ function loadAchievements(){
     tableID = "achievementTable";
 
     loadData(dataLocation, columns, tableID);
+
+
+    dataLocation = '../Data/teachingRecognition.json';
+    columns = Array("Semester", "Teaching Recognition");
+    tableID = "teachingRecognitionTable";
+
+    loadData(dataLocation, columns, tableID);
 }
 
 function loadNews(){
