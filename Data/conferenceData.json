@@ -1,6 +1,22 @@
 [
     {
         "Year": "2025",
+        "Authors": "Y. Xu, S. Ganesh, W. U. Mondal, Q. Bai, and V. Aggarwal",
+        "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
+        "URL": "https://arxiv.org/abs/2505.15138",
+        "Title": "Global Convergence for Average Reward Constrained MDPs with Primal-Dual Actor Critic Algorithm"
+    },
+
+    {
+        "Year": "2025",
+        "Authors": "Y. Xu, W. U. Mondal, and V. Aggarwal",
+        "Journal/Conference": "Neural Information Processing Systems (NeurIPS)",
+        "URL": "https://arxiv.org/abs/2502.16816",
+        "Title": "Finite-Sample Analysis of Policy Evaluation for Robust Average Reward Reinforcement Learning"
+    },
+
+    {
+        "Year": "2025",
         "Authors": "S. Ganesh, W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "International Conference on Machine Learning (ICML)",
         "URL": "https://arxiv.org/abs/2407.18878",
