@@ -19,7 +19,7 @@
         "Year": "2025",
         "Authors": "S. Ganesh, W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "International Conference on Machine Learning (ICML)",
-        "URL": "https://arxiv.org/abs/2407.18878",
+        "URL": "https://proceedings.mlr.press/v267/ganesh25b.html",
         "Title": "A Sharper Global Convergence Analysis for Average Reward Reinforcement Learning via an Actor-Critic Approach"
     },
 
@@ -27,7 +27,7 @@
         "Year": "2025",
         "Authors": "S. Ganesh, J. Chen, W. U. Mondal, and V. Aggarwal",
         "Journal/Conference": "Conference on Uncertainty in Artificial Intelligence (UAI)",
-        "URL": "#",
+        "URL": "https://proceedings.mlr.press/v286/ganesh25a.html",
         "Title": "Order-Optimal Global Convergence for Average Reward Actor-Critic with General Policy and Neural Critic Parametrization"
     },
 
