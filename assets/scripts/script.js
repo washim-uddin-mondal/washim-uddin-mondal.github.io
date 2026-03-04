@@ -119,6 +119,96 @@ function escapeHtml(text) {
     .replaceAll("'", "&#39;");
 }
 
+function normalizeLocalDataHref(href) {
+  const raw = String(href ?? "").trim();
+  if (!raw) {
+    return "";
+  }
+
+  const dataMatch = raw.match(/^\.?\.?\/?data\/(.+)$/i);
+  if (dataMatch) {
+    return resolveFromRoot(`data/${dataMatch[1]}`);
+  }
+  return raw;
+}
+
+function normalizeDataLinks(text) {
+  return String(text).replaceAll("../Data/", "../data/").replaceAll("./Data/", "./data/");
+}
+
+function classifyActionLink(href, text) {
+  const normalizedHref = href.toLowerCase();
+  const normalizedText = text.toLowerCase();
+  if (normalizedHref.endsWith(".pdf") || normalizedText.includes("pdf")) {
+    return "pdf";
+  }
+  if (normalizedHref.startsWith("http://") || normalizedHref.startsWith("https://") || normalizedText.includes("web")) {
+    return "web";
+  }
+  return "";
+}
+
+function iconSvg(type) {
+  if (type === "pdf") {
+    return "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 2h7l5 5v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z\"></path><path d=\"M14 2v6h6\"></path></svg>";
+  }
+  return "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M14 4h6v6\"></path><path d=\"M20 4 10 14\"></path><path d=\"M10 5H7a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-3\"></path></svg>";
+}
+
+function iconActionLink(type, href) {
+  const label = type === "pdf" ? "Open PDF" : "Open web link";
+  return (
+    "<a class=\"icon-action-btn icon-action-" +
+    type +
+    "\" href=\"" +
+    escapeHtml(href) +
+    "\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"" +
+    label +
+    "\" title=\"" +
+    label +
+    "\">" +
+    iconSvg(type) +
+    "</a>"
+  );
+}
+
+function extractContentAndActions(htmlText) {
+  const holder = document.createElement("div");
+  holder.innerHTML = normalizeDataLinks(htmlText);
+  const anchors = Array.from(holder.querySelectorAll("a[href]"));
+  const actions = {
+    pdf: "",
+    web: "",
+  };
+
+  anchors.forEach((anchor) => {
+    const href = normalizeLocalDataHref(anchor.getAttribute("href"));
+    const type = classifyActionLink(href, anchor.textContent || "");
+    if (!href || !type || actions[type]) {
+      return;
+    }
+    actions[type] = href;
+    anchor.remove();
+  });
+
+  const contentHtml = holder.innerHTML.replace(/\s+/g, " ").trim();
+  return { contentHtml, actions };
+}
+
+function actionButtonsHtml(actions) {
+  const links = [];
+  if (actions.pdf) {
+    links.push(iconActionLink("pdf", actions.pdf));
+  }
+  if (actions.web) {
+    links.push(iconActionLink("web", actions.web));
+  }
+  if (links.length === 0) {
+    return "";
+  }
+  return "<span class=\"cell-actions\" aria-label=\"Related links\">" + links.join("") + "</span>";
+}
+
 function renderAwardsTables(achievements, teaching) {
   const achievementTable = document.getElementById("achievementTable");
   if (achievementTable) {
@@ -139,11 +229,14 @@ function renderAwardsTables(achievements, teaching) {
   if (teachingTable) {
     let html = "<thead><tr><th>Semester</th><th>Teaching Recognition</th></tr></thead><tbody>";
     teaching.forEach((item) => {
+      const parsed = extractContentAndActions(item.recognition);
+      const recognitionHtml = parsed.contentHtml || "<span>-</span>";
       html +=
         "<tr><td data-label=\"Semester\"><span class=\"semester-badge\">" +
         escapeHtml(item.semester) +
         "</span></td><td data-label=\"Teaching Recognition\"><div class=\"award-entry\">" +
-        item.recognition +
+        recognitionHtml +
+        actionButtonsHtml(parsed.actions) +
         "</div></td></tr>";
     });
     html += "</tbody>";
@@ -159,6 +252,8 @@ function renderOpeningsTable(openings) {
 
   let html = "<thead><tr><th>Position</th><th>Deadline</th><th>Sponsor</th><th>Details</th></tr></thead><tbody>";
   openings.forEach((item) => {
+    const parsed = extractContentAndActions(item.details);
+    const detailsHtml = parsed.contentHtml || "";
     html +=
       "<tr><td data-label=\"Position\"><div class=\"member-degree\">" +
       escapeHtml(item.position) +
@@ -166,8 +261,9 @@ function renderOpeningsTable(openings) {
       escapeHtml(item.deadline) +
       "</span></td><td data-label=\"Sponsor\"><div class=\"award-entry\">" +
       escapeHtml(item.sponsor) +
-      "</div></td><td data-label=\"Details\"><div class=\"award-entry\">" +
-      item.details +
+      "</div></td><td data-label=\"Details\" class=\"details-cell\"><div class=\"award-entry details-entry\">" +
+      detailsHtml +
+      actionButtonsHtml(parsed.actions) +
       "</div></td></tr>";
   });
   html += "</tbody>";
@@ -255,9 +351,7 @@ async function loadAwardsTables() {
 
     const normalizedTeaching = teachingRows.map((item) => ({
       semester: String(item.Semester ?? "").trim(),
-      recognition: String(item["Teaching Recognition"] ?? "")
-        .replaceAll("../Data/", "https://home.iitk.ac.in/~wmondal/Data/")
-        .trim(),
+      recognition: normalizeDataLinks(item["Teaching Recognition"] ?? "").trim(),
     }));
 
     renderAwardsTables(normalizedAchievements, normalizedTeaching);
@@ -298,7 +392,7 @@ async function loadOpeningsTable() {
       position: String(item.Position ?? "").trim(),
       deadline: String(item.Deadline ?? "").trim(),
       sponsor: String(item.Sponsor ?? "").trim(),
-      details: String(item.Details ?? "").replaceAll("../Data/", "https://home.iitk.ac.in/~wmondal/Data/").trim(),
+      details: normalizeDataLinks(item.Details ?? "").trim(),
     }));
     renderOpeningsTable(normalized);
   } catch (error) {
