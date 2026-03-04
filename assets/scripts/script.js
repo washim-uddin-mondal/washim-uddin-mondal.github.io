@@ -1,13 +1,3 @@
-const dateEl = document.getElementById("updatedDate");
-if (dateEl) {
-  const now = new Date();
-  dateEl.textContent = now.toLocaleDateString("en-IN", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
-
 const revealEls = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   (entries) => {
