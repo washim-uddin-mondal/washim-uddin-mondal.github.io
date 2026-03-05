@@ -254,6 +254,7 @@ function renderOpeningsTable(openings) {
   openings.forEach((item) => {
     const parsed = extractContentAndActions(item.details);
     const detailsHtml = parsed.contentHtml || "";
+    const detailsContent = detailsHtml ? "<span class=\"details-text\">" + detailsHtml + "</span>" : "";
     html +=
       "<tr><td data-label=\"Position\"><div class=\"member-degree\">" +
       escapeHtml(item.position) +
@@ -262,7 +263,7 @@ function renderOpeningsTable(openings) {
       "</span></td><td data-label=\"Sponsor\"><div class=\"award-entry\">" +
       escapeHtml(item.sponsor) +
       "</div></td><td data-label=\"Details\" class=\"details-cell\"><div class=\"award-entry details-entry\">" +
-      detailsHtml +
+      detailsContent +
       actionButtonsHtml(parsed.actions) +
       "</div></td></tr>";
   });
