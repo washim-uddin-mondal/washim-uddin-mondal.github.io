@@ -1,0 +1,127 @@
+[
+  {
+    "Lecture No.": "1",
+    "Lecture Title": "Set Theory",
+    "PDF Link": "courses/probability-stochastic-processes/lectures/lecture-1.pdf"
+  },
+
+  {
+    "Lecture No.": "2",
+    "Lecture Title": "Functions and Countability",
+    "PDF Link": "courses/probability-stochastic-processes/lectures/lecture-2.pdf"
+  },
+
+  {
+    "Lecture No.": "3",
+    "Lecture Title": "Prelude to Probability Spaces",
+    "PDF Link": "courses/probability-stochastic-processes/lectures/lecture-3.pdf"
+  },
+
+  {
+    "Lecture No.": "4",
+    "Lecture Title": "Probability Spaces",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "5",
+    "Lecture Title": "Conditional Probability and Independence",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "6",
+    "Lecture Title": "Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "7",
+    "Lecture Title": "Discrete Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "8",
+    "Lecture Title": "Continuous Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "9",
+    "Lecture Title": "Functions of Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "10",
+    "Lecture Title": "Expectation",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "11",
+    "Lecture Title": "Multiple Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "12",
+    "Lecture Title": "Conditional Distribution",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "13",
+    "Lecture Title": "Functions of Random Vectors",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "14",
+    "Lecture Title": "Expectation Revisited",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "15",
+    "Lecture Title": "Conditional Expectation",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "16",
+    "Lecture Title": "Sequence of Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "17",
+    "Lecture Title": "Concentration Bounds and Limit Theorems",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "18",
+    "Lecture Title": "Simulation of Random Variables",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "19",
+    "Lecture Title": "Stochastic Processes-I",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "20",
+    "Lecture Title": "Stochastic Processes-II",
+    "PDF Link": ""
+  },
+
+  {
+    "Lecture No.": "21",
+    "Lecture Title": "Markov Processes",
+    "PDF Link": ""
+  }
+]
