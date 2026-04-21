@@ -1274,7 +1274,7 @@ a[href^="https://"]:not(.btn):hover {
 #courseMaterialsTable,
 #practiceSetsTable {
   width: min(700px, 100%);
-  min-width: 0;
+  min-width: 620px;
 }
 
 #courseMaterialsTable th:nth-child(1),

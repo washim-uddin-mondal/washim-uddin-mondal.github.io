@@ -109,7 +109,7 @@ const dataPaths = {
   conferences: "data/conference-data.json",
   currentMembers: "data/current-members.json",
   journals: "data/journal-data.json",
-  openings: "data/project-openings.json",
+  openings: "data/openings/project-openings.json",
   teachingRecognition: "data/teaching/teaching-recognition/teaching-recognition.json",
   taughtCourses: "data/teaching/courses/taught-courses.json",
   probabilityStochasticProcessesLectures:
