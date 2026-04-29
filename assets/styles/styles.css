@@ -843,7 +843,7 @@ body {
 }
 
 .lab-banner {
-  background: rgba(7, 12, 14, 0.96);
+  background: #030507;
   border-bottom: 1px solid rgba(47, 71, 71, 0.6);
   border-radius: 0 0 12px 12px;
   width: min(1050px, 92vw);
