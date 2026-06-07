@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://washim-uddin-mondal.github.io/sitemap.xml
